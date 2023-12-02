@@ -1,0 +1,34 @@
+{
+  "name": "@rooser/root",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "devtools/*",
+    "packages/api/*",
+    "packages/components/*",
+    "packages/domain/*",
+    "packages/features/*",
+    "packages/ui",
+    "packages/utils/*"
+  ],
+  "scripts": {
+    "dev": "yarn workspace @rooser/webapp dev",
+    "lint": "eslint .",
+    "storybook": "yarn workspace @rooser/storybook start",
+    "test": "jest",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@rooser/eslint": "workspace:*",
+    "@rooser/jest": "workspace:*",
+    "@types/node": "^20.9.1",
+    "eslint": "^8.53.0",
+    "jest": "^29.7.0",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": "^20",
+    "npm": "please-use-yarn",
+    "yarn": ">=3.2"
+  }
+}

@@ -1,0 +1,27 @@
+.table {
+  @apply w-full border-separate border-spacing-y-2;
+}
+
+.thead {
+  @apply text-xs text-gray-500 uppercase text-left;
+}
+
+.cell {
+  @apply p-2 py-4 bg-white;
+}
+
+.price {
+  @apply text-right;
+}
+
+.cell:first-of-type {
+  width: 40%
+}
+
+.cell:last-of-type {
+  width: 20%
+}
+
+.info {
+  @apply text-xs;
+}

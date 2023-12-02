@@ -1,0 +1,8 @@
+{
+  "name": "@rooser/util-currency",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "dependencies": {
+    "dayjs": "^1.11.10"
+  }
+}

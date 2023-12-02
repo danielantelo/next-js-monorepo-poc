@@ -1,0 +1,88 @@
+{
+  "results": [
+    {
+      "id": 9,
+      "price": 11.44,
+      "quantity": 83,
+      "quantityLeft": 77,
+      "dispatchDate": "2023-09-26T13:30:00Z",
+      "createdAt": "2023-09-22T03:14:24Z",
+      "expiresAt": "2023-09-23T00:00:00Z",
+      "quality": "A+",
+      "grade": "2-3Kg",
+      "sku": {
+        "nature": "cooked",
+        "species": "Shrimp (black tiger )",
+        "type": "under protective atmosphere",
+        "variation": "cooked"
+      },
+      "packing": {
+        "id": 42,
+        "unit": 2,
+        "label": "47.1514Kg",
+        "amount": 47.15
+      },
+      "status": "NOT_ACCEPTED",
+      "lastSaleAt": null,
+      "fishingMethod": "farmed",
+      "fishingAreaCode": null,
+      "country": null
+    },
+    {
+      "id": 10,
+      "price": 2.72,
+      "quantity": 83,
+      "quantityLeft": 12,
+      "dispatchDate": "2023-09-26T13:30:00Z",
+      "createdAt": "2023-09-22T03:14:24Z",
+      "expiresAt": "2023-09-23T00:00:00Z",
+      "quality": "E",
+      "grade": "2-3Kg",
+      "sku": {
+        "nature": "frozen",
+        "species": "Cod",
+        "type": "handcut filet",
+        "variation": "skin on"
+      },
+      "packing": {
+        "id": 40,
+        "unit": 2,
+        "label": "27.0706Kg",
+        "amount": 27.07
+      },
+      "status": "NOT_ACCEPTED",
+      "lastSaleAt": null,
+      "fishingMethod": "surrounding/lift nets",
+      "fishingAreaCode": null,
+      "country": null
+    },
+    {
+      "id": 7,
+      "price": 4.66,
+      "quantity": 92,
+      "quantityLeft": 66,
+      "dispatchDate": "2023-09-26T13:30:00Z",
+      "createdAt": "2023-09-22T03:14:23Z",
+      "expiresAt": "2023-09-23T00:00:00Z",
+      "quality": "B",
+      "grade": "2-3Kg",
+      "sku": {
+        "nature": "alive",
+        "species": "Plaice",
+        "type": "whole",
+        "variation": "gutted"
+      },
+      "packing": {
+        "id": 40,
+        "unit": 2,
+        "label": "27.0706Kg",
+        "amount": 27.07
+      },
+      "status": "NOT_ACCEPTED",
+      "lastSaleAt": null,
+      "fishingMethod": "surrounding/lift nets",
+      "fishingAreaCode": null,
+      "country": null
+    }
+  ]
+}

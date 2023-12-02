@@ -1,0 +1,29 @@
+{
+  "name": "@rooser/storybook",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "storybook build -c src -o dist",
+    "start": "storybook dev -c src -p 9002 --ci"
+  },
+  "dependencies": {
+    "@rooser/component-collapsible-section": "workspace:*",
+    "@rooser/component-loader": "workspace:*",
+    "@rooser/component-orders-table": "workspace:*",
+    "@rooser/feature-live-market": "workspace:*",
+    "@rooser/ui": "workspace:*",
+    "@storybook/addon-essentials": "^7.5.3",
+    "@storybook/addon-links": "^7.5.3",
+    "@storybook/addons": "^7.5.3",
+    "@storybook/react": "^7.5.3",
+    "storybook": "^7.5.3"
+  },
+  "devDependencies": {
+    "@storybook/react-vite": "^7.5.3",
+    "vite": "^5.0.0"
+  },
+  "peerDependencies": {
+    "react": "^18",
+    "react-dom": "^18"
+  }
+}

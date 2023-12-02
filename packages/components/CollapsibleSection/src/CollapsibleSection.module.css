@@ -1,0 +1,11 @@
+.section {
+  @apply p-2 pb-8;
+}
+
+.heading {
+  @apply flex items-center font-semibold text-lg;
+}
+
+.collapser {
+  @apply text-blue-500 ml-2 text-sm cursor-pointer;
+}
