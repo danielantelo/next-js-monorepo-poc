@@ -40,7 +40,14 @@ export function OrdersTable({ orders, actions }: OrdersTableProps) {
                 {order.status && <StatusBadge status={order.status} />} {order.product}
               </div>
               <div className={styles.info}>
-                {order.grade} {order.variation} {order.fishingMethod} {order.country}
+                {order.grade && <span className={styles.infoPoint}>{order.grade}</span>}
+                {order.variation && <span className={styles.infoPoint}>{order.variation}</span>}
+                {order.fishingMethod && <span className={styles.infoPoint}>{order.fishingMethod}</span>}
+                {order.country && (
+                  <span className={classNames(styles.infoPoint, styles[`country-${order.country}`])}>
+                    {order.country}
+                  </span>
+                )}
               </div>
             </td>
             <td className={styles.cell}>

@@ -27,6 +27,22 @@
   @apply text-xs;
 }
 
+.infoPoint {
+  @apply after:content-['·'] after:px-1;
+}
+
+.infoPoint:last-of-type {
+  @apply after:content-none;
+}
+
+.country-FRA {
+  @apply before:content-['🇫🇷'] before:pr-1;
+}
+
+.country-ENG {
+  @apply before:content-['🏴󠁧󠁢󠁥󠁮󠁧󠁿'] before:pr-1;
+}
+
 .noOrders {
   @apply bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3 mt-3;
 }
