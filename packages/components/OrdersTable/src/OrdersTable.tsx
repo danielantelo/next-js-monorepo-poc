@@ -1,4 +1,3 @@
-import { ComponentType } from 'react';
 import classNames from 'classnames';
 import { Order } from '@rooser/domain-orders';
 import { formatDate } from '@rooser/util-dates';
@@ -9,12 +8,18 @@ import { StatusBadge } from './StatusBadge';
 
 export interface OrdersTableProps {
   orders: Order[];
-  ActionsComponent?: ComponentType<{
-    id: number;
-  }>;
+  actions?: (id: number) => JSX.Element;
 }
 
-export function OrdersTable({ orders, ActionsComponent }: OrdersTableProps) {
+export function OrdersTable({ orders, actions }: OrdersTableProps) {
+  if (orders.length === 0) {
+    return (
+      <div className={styles.noOrders}>
+        <p>No orders</p>
+      </div>
+    );
+  }
+
   return (
     <table className={styles.table}>
       <thead className={styles.thead}>
@@ -28,8 +33,8 @@ export function OrdersTable({ orders, ActionsComponent }: OrdersTableProps) {
         </tr>
       </thead>
       <tbody>
-        {orders.map((order) => (
-          <tr className={styles.trow} key={`product-${order.id}`}>
+        {orders.map((order: Order, idx: number) => (
+          <tr key={`product-${order.id}-${idx}`}>
             <td className={styles.cell}>
               <div>
                 {order.status && <StatusBadge status={order.status} />} {order.product}
@@ -44,9 +49,7 @@ export function OrdersTable({ orders, ActionsComponent }: OrdersTableProps) {
             <td className={styles.cell}>{formatDate(order.dispatch)}</td>
             <td className={styles.cell}>{order.quantity}</td>
             <td className={classNames(styles.cell, styles.price)}>{formatAmount(order.price, order.currency)}</td>
-            <td className={classNames(styles.cell, styles.actions)}>
-              {ActionsComponent && <ActionsComponent id={order.id} />}
-            </td>
+            <td className={classNames(styles.cell, styles.actions)}>{actions?.(order.id)}</td>
           </tr>
         ))}
       </tbody>

@@ -8,18 +8,18 @@ export default {
 
 export const Accepted: StoryObj<typeof StatusBadge> = {
   args: {
-    status: 'accepted',
+    status: 'ACCEPTED',
   },
 };
 
 export const Live: StoryObj<typeof StatusBadge> = {
   args: {
-    status: 'live',
+    status: 'LIVE',
   },
 };
 
 export const Missed: StoryObj<typeof StatusBadge> = {
   args: {
-    status: 'missed',
+    status: 'MISSED',
   },
 };

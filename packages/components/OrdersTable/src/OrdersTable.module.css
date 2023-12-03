@@ -10,18 +10,23 @@
   @apply p-2 py-4 bg-white;
 }
 
-.price, .actions {
+.price,
+.actions {
   @apply text-right;
 }
 
 .cell:first-of-type {
-  width: 40%
+  width: 40%;
 }
 
 .cell:last-of-type {
-  width: 20%
+  width: 20%;
 }
 
 .info {
   @apply text-xs;
+}
+
+.noOrders {
+  @apply bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3 mt-3;
 }

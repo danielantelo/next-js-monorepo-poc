@@ -13,3 +13,9 @@ export const Default: StoryObj<typeof OrdersTable> = {
     orders: mockedOrders
   },
 };
+
+export const Empty: StoryObj<typeof OrdersTable> = {
+  args: {
+    orders: []
+  },
+};

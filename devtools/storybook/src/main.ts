@@ -1,4 +1,4 @@
-import type { StorybookConfig } from '@storybook/react';
+import type { StorybookConfig } from '@storybook/react-vite';
 import path from 'path';
 import { mergeConfig } from 'vite';
 import { workspaces } from '../../../package.json';
@@ -15,9 +15,7 @@ const config: StorybookConfig = {
   addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
   framework: {
     name: '@storybook/react-vite',
-    options: {
-      fastRefresh: true,
-    },
+    options: {},
   },
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   async viteFinal(config: Record<string, any>) {

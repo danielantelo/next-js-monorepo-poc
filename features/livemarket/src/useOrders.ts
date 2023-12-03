@@ -1,19 +1,9 @@
-import { getOrders } from '@rooser/api-orders';
 import { Order } from '@rooser/domain-orders';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
-export function useOrders() {
-  const [acceptedOrders, setAcceptedOrders] = useState<Order[]>([]);
-  const [liveOrders, setLiveOrders] = useState<Order[]>([]);
-
-  useEffect(() => {
-    async function fetch() {
-      const { acceptedOrders, liveOrders } = await getOrders();
-      setAcceptedOrders(acceptedOrders);
-      setLiveOrders(liveOrders);
-    }
-    fetch();
-  }, []);
+export function useOrders(intitialAcceptedOrders: Order[] = [], initialLiveOrders: Order[] = []) {
+  const [acceptedOrders, setAcceptedOrders] = useState<Order[]>(intitialAcceptedOrders);
+  const [liveOrders, setLiveOrders] = useState<Order[]>(initialLiveOrders);
 
   const onClickAccept = (id: number) => {
     // @TODO post order acceptance to api
@@ -21,7 +11,7 @@ export function useOrders() {
     // optimistically accept order on ui
     const matched: Order = liveOrders.find((curr: Order) => curr.id === id)!;
     setLiveOrders((prev) => prev?.filter((current: Order) => current.id !== matched.id));
-    setAcceptedOrders((prev) => ({ ...prev, matched }));
+    setAcceptedOrders((prev) => [...prev, { ...matched, status: 'ACCEPTED' }]);
   };
 
   const onClickIgnore = (id: number) => {

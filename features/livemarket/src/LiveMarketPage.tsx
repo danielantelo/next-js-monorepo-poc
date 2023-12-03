@@ -1,25 +1,40 @@
+'use client';
+
 import { CollapsibleSection } from '@rooser/component-collapsible-section';
 import { OrdersTable } from '@rooser/component-orders-table';
 import { Order } from '@rooser/domain-orders';
 import { LiveActions } from './LiveActions';
+import { useOrders } from './useOrders';
 
 export interface LiveMarketPageProps {
-  acceptedOrders: Order[];
-  liveOrders: Order[];
-  recentActivity: Order[];
+  initialAcceptedOrders: Order[];
+  initialLiveOrders: Order[];
+  initialRecentActivity: Order[];
 }
 
-export function LiveMarketPage({ acceptedOrders, liveOrders, recentActivity }: LiveMarketPageProps) {
+export function LiveMarketPage({
+  initialAcceptedOrders,
+  initialLiveOrders,
+  initialRecentActivity,
+}: LiveMarketPageProps) {
+  const { acceptedOrders, liveOrders, onClickAccept, onClickIgnore } = useOrders(
+    initialAcceptedOrders,
+    initialLiveOrders
+  );
+
   return (
     <main>
       <CollapsibleSection title="Accepted Orders">
         <OrdersTable orders={acceptedOrders} />
       </CollapsibleSection>
       <CollapsibleSection title="Live Demand">
-        <OrdersTable orders={liveOrders} ActionsComponent={LiveActions} />
+        <OrdersTable
+          orders={liveOrders}
+          actions={(id: number) => <LiveActions id={id} onClickAccept={onClickAccept} onClickIgnore={onClickIgnore} />}
+        />
       </CollapsibleSection>
       <CollapsibleSection title="Recent Activity">
-        <OrdersTable orders={recentActivity} />
+        <OrdersTable orders={initialRecentActivity} />
       </CollapsibleSection>
     </main>
   );

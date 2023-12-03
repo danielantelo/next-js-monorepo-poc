@@ -29,7 +29,7 @@ describe('OrdersTable', () => {
 
   it('renders given actions component per row', () => {
     const MyActions = () => <>hello actions</>;
-    render(<OrdersTable orders={mockedOrders} ActionsComponent={MyActions} />);
+    render(<OrdersTable orders={mockedOrders} actions={MyActions} />);
     expect(screen.queryAllByText(/hello actions/i).length).toBe(2);
   });
 });
