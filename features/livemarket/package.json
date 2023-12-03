@@ -1,7 +1,7 @@
 {
   "name": "@rooser/feature-live-market",
   "version": "1.0.0",
-  "main": "src/index.ts",
+  "main": "src/index.tsx",
   "dependencies": {
     "@rooser/api-orders": "workspace:*",
     "@rooser/component-collapsible-section": "workspace:*",

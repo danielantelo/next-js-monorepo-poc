@@ -10,7 +10,7 @@
   @apply p-2 py-4 bg-white;
 }
 
-.price {
+.price, .actions {
   @apply text-right;
 }
 

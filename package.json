@@ -4,10 +4,10 @@
   "workspaces": [
     "apps/*",
     "devtools/*",
+    "features/*",
     "packages/api/*",
     "packages/components/*",
     "packages/domain/*",
-    "packages/features/*",
     "packages/ui",
     "packages/utils/*"
   ],

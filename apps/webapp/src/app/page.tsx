@@ -1,1 +1,1 @@
-export { LiveMarketPage as default } from '@rooser/feature-live-market';
+export { default as default } from '@rooser/feature-live-market';

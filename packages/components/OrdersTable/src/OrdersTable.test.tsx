@@ -26,4 +26,10 @@ describe('OrdersTable', () => {
     expect(within(cells[3]).getByText(/10 boxes/i)).toBeInTheDocument();
     expect(within(cells[4]).getByText(/21.99/i)).toBeInTheDocument();
   });
+
+  it('renders given actions component per row', () => {
+    const MyActions = () => <>hello actions</>;
+    render(<OrdersTable orders={mockedOrders} ActionsComponent={MyActions} />);
+    expect(screen.queryAllByText(/hello actions/i).length).toBe(2);
+  });
 });

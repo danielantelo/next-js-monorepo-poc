@@ -3198,9 +3198,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@rooser/feature-live-market@workspace:*, @rooser/feature-live-market@workspace:packages/features/livemarket":
+"@rooser/feature-live-market@workspace:*, @rooser/feature-live-market@workspace:features/livemarket":
   version: 0.0.0-use.local
-  resolution: "@rooser/feature-live-market@workspace:packages/features/livemarket"
+  resolution: "@rooser/feature-live-market@workspace:features/livemarket"
   dependencies:
     "@rooser/api-orders": "workspace:*"
     "@rooser/component-collapsible-section": "workspace:*"

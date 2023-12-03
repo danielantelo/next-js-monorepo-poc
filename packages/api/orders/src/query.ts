@@ -48,7 +48,7 @@ function apiMapper(curr: ApiOrder & ApiActivity): Order {
     dispatch: new Date(dispatch),
     quantity: `${curr.quantity.toString()} boxes`,
     price: curr.price,
-    currency: curr.currency,
+    currency: <'GBP' | 'EUR'>curr.currency,
     fishingMethod: curr.fishingMethod,
     variation: curr.sku.variation,
     status: curr.status === 'NOT_ACCEPTED' ? 'LIVE' : curr.status,
@@ -72,4 +72,14 @@ export async function fetchRecent(): Promise<Order[]> {
   const request = await fetch(`${baseUrl}/api/recent_activity.json`);
   const response: ApiActivity[] = await request.json();
   return response.map(apiMapper);
+}
+
+export async function getOrders() {
+  const [acceptedOrders, liveOrders, recentActivity] = await Promise.all([fetchAccepted(), fetchLive(), fetchRecent()]);
+
+  return {
+    acceptedOrders,
+    liveOrders,
+    recentActivity,
+  };
 }

@@ -10,11 +10,11 @@ The structure is pretty simple:
 
 |- **apps/**: top level apps: Website, LiveMarket, AdminPortal, etc.
 | |- **webapp/**
+|- **features/**: main entry for a feature and its pages, usually tied to app frameworks
 |- **devtools/**: development tools (cypress, storybook, jest configs etc)
 | |- **storybook/**
 | |- **cypress/**
-|- **packages/**: independently versionable packages
-| |- **features/**: main entry for functionality, can be a page or combination of pages for a feature
+|- **packages/**: app agnostic, independently versionable packages
 | |- **api/**: data providers
 | |- **ui**: base ui
 | |- **components/**: shared components

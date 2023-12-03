@@ -1,16 +1,20 @@
+import { ComponentType } from 'react';
+import classNames from 'classnames';
 import { Order } from '@rooser/domain-orders';
 import { formatDate } from '@rooser/util-dates';
 import { formatAmount } from '@rooser/util-currency';
 import styles from './OrdersTable.module.css';
 import { QualityBadge } from './QualityBadge';
 import { StatusBadge } from './StatusBadge';
-import classNames from 'classnames';
 
 export interface OrdersTableProps {
   orders: Order[];
+  ActionsComponent?: ComponentType<{
+    id: number;
+  }>;
 }
 
-export function OrdersTable({ orders }: OrdersTableProps) {
+export function OrdersTable({ orders, ActionsComponent }: OrdersTableProps) {
   return (
     <table className={styles.table}>
       <thead className={styles.thead}>
@@ -40,7 +44,9 @@ export function OrdersTable({ orders }: OrdersTableProps) {
             <td className={styles.cell}>{formatDate(order.dispatch)}</td>
             <td className={styles.cell}>{order.quantity}</td>
             <td className={classNames(styles.cell, styles.price)}>{formatAmount(order.price, order.currency)}</td>
-            <td className={styles.cell}></td>
+            <td className={classNames(styles.cell, styles.actions)}>
+              {ActionsComponent && <ActionsComponent id={order.id} />}
+            </td>
           </tr>
         ))}
       </tbody>
