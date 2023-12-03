@@ -2,9 +2,14 @@
   "name": "@rooser/component-collapsible-section",
   "version": "1.0.0",
   "main": "src/index.ts",
+  "dependencies": {
+    "@rooser/ui": "workspace:*"
+  },
+  "devDependencies": {
+    "@rooser/jest": "workspace:*"
+  },
   "peerDependencies": {
     "react": "^18",
-    "react-dom": "^18",
-    "tailwind": "^3"
+    "react-dom": "^18"
   }
 }

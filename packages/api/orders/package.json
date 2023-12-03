@@ -4,5 +4,8 @@
   "main": "src/index.ts",
   "dependencies": {
     "@rooser/domain-orders": "workspace:*"
+  },
+  "devDependencies": {
+    "@rooser/jest": "workspace:*"
   }
 }

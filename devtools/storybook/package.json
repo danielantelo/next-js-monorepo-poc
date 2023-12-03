@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "@rooser/component-collapsible-section": "workspace:*",
-    "@rooser/component-loader": "workspace:*",
     "@rooser/component-orders-table": "workspace:*",
     "@rooser/feature-live-market": "workspace:*",
     "@rooser/ui": "workspace:*",

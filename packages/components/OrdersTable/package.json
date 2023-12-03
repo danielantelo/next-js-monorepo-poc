@@ -4,13 +4,16 @@
   "main": "src/index.ts",
   "dependencies": {
     "@rooser/domain-orders": "workspace:*",
+    "@rooser/ui": "workspace:*",
     "@rooser/util-currency": "workspace:*",
     "@rooser/util-dates": "workspace:*",
     "classnames": "^2.3.2"
   },
+  "devDependencies": {
+    "@rooser/jest": "workspace:*"
+  },
   "peerDependencies": {
     "react": "^18",
-    "react-dom": "^18",
-    "tailwind": "^3"
+    "react-dom": "^18"
   }
 }
