@@ -2,12 +2,9 @@
 
 ## Structure
 
-I bootstrapped a `yarn workspace` monorepo.
+I bootstrapped a `yarn workspace` monorepo. The structure is pretty simple:
 
-> **_NOTE:_**  Opted not to use nx, it is a great tool but it has it shortcomings, this is a great follow up topic to discuss.
-
-The structure is pretty simple:
-
+```
 |- **apps/**: top level apps: Website, LiveMarket, AdminPortal, etc.
 | |- **webapp/**
 |- **features/**: main entry for a feature and its pages, usually tied to app frameworks
@@ -20,8 +17,12 @@ The structure is pretty simple:
 | |- **ui**: base ui
 | |- **components/**: shared components
 | |- **utils/**: shared utilities and helpers
+```
 
 The idea here is that you can have multiple consuming **apps** (web and mobile), these should be as leightweight as possible and delegate routes to a **feature**. Features compose multiple **components** making use of  **apis** and **utils** to form functionality.
+
+> **_NOTE:_**  Opted not to use nx, it is a great tool but it has it shortcomings, this is a great follow up topic to discuss.
+
 
 ## Approach
 
@@ -41,7 +42,7 @@ For `accepting` and `rejecting` orders we have event handlers in our custom hook
 Code confidence is THE most important thing for releasing software, so it is important to cover your back from all angles! For this challenge we include:
 
 - **linting** using eslint we can catch some nasties and ensure consistent style, run with `yarn lint`
-- **typechecking**: get tsc to ensure there are no typing issues, run with `yarn typecheck`
+- **type checking**: get tsc to ensure there are no typing issues, run with `yarn typecheck`
 - **unit tests** using jest and react-testing-library, run with `yarn test`
 - **visual regression component tests** using cypress and storybook, run with `yarn cy:storybook` and you can view regression snapshots in `devtools/cypress/snapshots/storybook`
 - **functional and visual regression page tests** using cypress and mocking the backend of the react app capture full page snapshots and ensure main functionality works via the browser, run with `yarn cy` and you can view snapshots in `devtools/cypress/snapshots`
