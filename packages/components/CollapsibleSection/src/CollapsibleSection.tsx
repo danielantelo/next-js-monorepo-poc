@@ -5,18 +5,18 @@ import styles from './CollapsibleSection.module.css';
 
 export interface CollapsibleSectionProps {
   title: string;
-  isCollapsed?: boolean;
+  collapsed?: boolean;
 }
 
 export function CollapsibleSection({
-  isCollapsed = false,
+  collapsed = false,
   title,
   children,
 }: PropsWithChildren<CollapsibleSectionProps>) {
-  const [collapsed, setCollapsed] = useState<boolean>(isCollapsed);
+  const [isCollapsed, setIsCollapsed] = useState<boolean>(collapsed);
 
   const onToggleCollapse = () => {
-    setCollapsed((prev) => !prev);
+    setIsCollapsed((prev) => !prev);
   };
 
   return (
@@ -24,7 +24,7 @@ export function CollapsibleSection({
       <div className={styles.heading}>
         <h2>{title}</h2>
         <button className={styles.collapser} onClick={onToggleCollapse}>
-          {collapsed ? 'Expand' : 'Collapse'}
+          {isCollapsed ? 'Expand' : 'Collapse'}
         </button>
       </div>
       {!collapsed && <div>{children}</div>}

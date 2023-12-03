@@ -9,7 +9,15 @@ export default {
 export const Default: StoryObj<typeof CollapsibleSection> = {
   render: () => (
     <CollapsibleSection title="Section 2">
-      <div>content</div>
+      <div style={{ background: 'white', padding: '10px' }}>content</div>
+    </CollapsibleSection>
+  ),
+};
+
+export const Collapsed: StoryObj<typeof CollapsibleSection> = {
+  render: () => (
+    <CollapsibleSection title="Section 2" collapsed={true}>
+      <div style={{ background: 'white', padding: '10px' }}>content</div>
     </CollapsibleSection>
   ),
 };

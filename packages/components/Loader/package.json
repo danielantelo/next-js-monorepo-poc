@@ -1,9 +1,0 @@
-{
-  "name": "@rooser/component-loader",
-  "version": "1.0.0",
-  "main": "src/index.ts",
-  "peerDependencies": {
-    "react": "^18",
-    "react-dom": "^18"
-  }
-}
