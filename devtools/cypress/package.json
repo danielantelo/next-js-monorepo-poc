@@ -1,0 +1,12 @@
+{
+  "name": "@rooser/cypress",
+  "version": "0.1.0",
+  "scripts": {
+    "cy": "cypress run --e2e --browser chrome --headless --config baseUrl=http://localhost:3000/,specPattern='cypress/integration/webapp/*'",
+    "cy:storybook": "cypress run --e2e --browser chrome --headless --config baseUrl=http://localhost:9002/,specPattern='cypress/integration/storybook/*'"
+  },
+  "devDependencies": {
+    "cypress": "^13",
+    "cypress-storybook-commands": "^0.3"
+  }
+}

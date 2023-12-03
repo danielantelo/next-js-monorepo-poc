@@ -16,7 +16,9 @@
     "lint": "eslint .",
     "storybook": "yarn workspace @rooser/storybook start",
     "test": "jest",
-    "typecheck": "tsc --noEmit -p tsconfig.json"
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "cy": "yarn workspace @rooser/cypress cy",
+    "cy:storybook": "yarn workspace @rooser/cypress cy:storybook"
   },
   "devDependencies": {
     "@rooser/eslint": "workspace:*",

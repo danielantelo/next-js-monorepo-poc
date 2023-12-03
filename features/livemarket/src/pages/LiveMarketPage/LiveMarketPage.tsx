@@ -3,8 +3,8 @@
 import { CollapsibleSection } from '@rooser/component-collapsible-section';
 import { OrdersTable } from '@rooser/component-orders-table';
 import { Order } from '@rooser/domain-orders';
-import { LiveActions } from './LiveActions';
-import { useOrders } from './useOrders';
+import { LiveActions } from '../../components/LiveActions';
+import { useOrders } from '../../useOrders';
 
 export interface LiveMarketPageProps {
   initialAcceptedOrders: Order[];
