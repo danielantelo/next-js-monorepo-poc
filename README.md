@@ -67,7 +67,7 @@ Build and run with:
 
 ```
 docker build --tag rooserapp .
-docker run -p 3000:3000 -e API_HOST="host.docker.internal:3000" rooserapp
+docker run -p 3000:3000 -e API_HOST="http://host.docker.internal:3000" rooserapp
 ```
 
 ## What is missing that I would have liked to include
