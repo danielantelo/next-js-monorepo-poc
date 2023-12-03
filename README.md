@@ -37,7 +37,7 @@ We then have our `features/livemarket` package which has a `LiveMarketPageContai
 
 For `accepting` and `rejecting` orders we have event handlers in our custom hook which currently have a placeholder for where we would call the backend to update order status, and it does an optimistic update on the ui to reflect the action, assuming the backend will eventually sync. (NOTE: the backend is missing so reloading the page will show original data - we could `persist state in session` if we wanted to be extra optimistic, but that's for another challenge...)
 
-## Testing
+## Testing
 
 Code confidence is THE most important thing for releasing software, so it is important to cover your back from all angles! For this challenge we include:
 
