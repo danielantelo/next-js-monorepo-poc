@@ -4,6 +4,8 @@ COPY . .
 RUN yarn install --immutable
 RUN yarn build
 
+# create a lightweight production image containing just the built standalone nextjs app
+# with the prod node_modules and the public + static files
 FROM node:20-alpine as production
 WORKDIR /app
 ENV NODE_ENV production
