@@ -7,6 +7,6 @@
   },
   "devDependencies": {
     "cypress": "^13",
-    "cypress-storybook-commands": "^0.3"
+    "cypress-storybook-commands": "^0.3.5"
   }
 }

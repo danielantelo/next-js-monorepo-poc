@@ -31,11 +31,21 @@ I'll be tackling this challenge in a bottom up approach, making use of storybook
 We try to keep the apps as lightweight as possible, usually only handling mapping routing to appropriate features.
 Features will then ofcourse be heavily coupled to the apps, and will make use of their dependencies as peerDependencies. In this example each feature would have `Container` type entry points which handle the serer side data fetching and feed the data into a `presentational component` which then enhances itself client side with hooks.
 
+### API
+
 Data fetching is abstracted into a promised based `api/` package and can be used both server and client side. I have included a different fetch per type of order to be displayed, then a shorthand for fetching all orders in parallel async resolving via `Promise.all`, this is more performant than doing them individually.
+
+### Page
 
 We then have our `features/livemarket` package which has a `LiveMarketPageContainer` to fetch all orders server side and feed them to our presentational `LiveMarketPage` which makes use of a custom `userOrders` hook to update the ui accordingly.
 
 For `accepting` and `rejecting` orders we have event handlers in our custom hook which currently have a placeholder for where we would call the backend to update order status, and it does an optimistic update on the ui to reflect the action, assuming the backend will eventually sync. (NOTE: the backend is missing so reloading the page will show original data - we could `persist state in session` if we wanted to be extra optimistic, but that's for another challenge...)
+
+The page is composed using the `CollapsibleSection` and `OrdersTable` components which are purely presentational and app agnostic. These are expected to work on any JSX based app.
+
+### Styling
+
+I usually opt to use `Chakra` or `MaterialUI` for web based apps, and `NativeBase` for mobile based apps, as this take the whole css layer away from the equation and allow for prop driven design system components. For this challenged I am using `tailwind`, I prefer to keep the JSX components clean and `agnostic` so use `css modules` and apply tilwind styling through those. NOTE: this will then require a build config to make the styles `atomic` and remove duplication for a slimmer css file.
 
 ## Testing
 

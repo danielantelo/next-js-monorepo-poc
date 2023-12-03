@@ -3169,7 +3169,7 @@ __metadata:
   resolution: "@rooser/cypress@workspace:devtools/cypress"
   dependencies:
     cypress: ^13
-    cypress-storybook-commands: ^0.3
+    cypress-storybook-commands: ^0.3.5
   languageName: unknown
   linkType: soft
 
@@ -6350,14 +6350,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cypress-storybook-commands@npm:^0.3":
-  version: 0.3.4
-  resolution: "cypress-storybook-commands@npm:0.3.4"
+"cypress-storybook-commands@npm:^0.3.5":
+  version: 0.3.5
+  resolution: "cypress-storybook-commands@npm:0.3.5"
   dependencies:
     cypress-image-snapshot: ^4.0.1
   peerDependencies:
     cypress: ">=10.0.0"
-  checksum: 8e1720ca0ea22255452dbf178cf51ae4716a042cb4a0c5890b2a46339220410145a47ed6305f5b444e402f6170d820efc6707d66178132d86415517e19438238
+  checksum: 352e80778e84929365b3df63f1c287a37f2b9612db7ad8c8af3c7c4b3366781e9da9655945ad25bb4c98706f5fef79af6dd21aa561efd96f59861a9985b5f311
   languageName: node
   linkType: hard
 
