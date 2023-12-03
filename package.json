@@ -12,8 +12,10 @@
     "packages/utils/*"
   ],
   "scripts": {
+    "build": "yarn workspace @rooser/webapp build",
     "dev": "yarn workspace @rooser/webapp dev",
     "lint": "eslint .",
+    "start": "yarn workspace @rooser/webapp start",
     "storybook": "yarn workspace @rooser/storybook start",
     "test": "jest",
     "typecheck": "tsc --noEmit -p tsconfig.json",

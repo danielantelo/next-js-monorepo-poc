@@ -67,3 +67,12 @@ In a production ready setup we would also add **e2e tests** against a deployed i
 - Some responsive behaviour to the gallery listing
 - Pagination on the order tables to limit to 10 and ensure a speedy experience
 - Proper cypress tests, I only added the storybook visual regression and started on the webapp visual/functional
+
+## Dockerized
+
+Build and run with:
+
+```
+docker build --tag rooserapp .
+docker run -p 3000:3000 rooserapp
+```
