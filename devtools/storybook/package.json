@@ -6,7 +6,7 @@
     "build": "storybook build -c src -o dist",
     "start": "storybook dev -c src -p 9002 --ci"
   },
-  "dependencies": {
+  "devDependencies": {
     "@rooser/component-collapsible-section": "workspace:*",
     "@rooser/component-orders-table": "workspace:*",
     "@rooser/feature-live-market": "workspace:*",
@@ -15,10 +15,8 @@
     "@storybook/addon-links": "^7.5.3",
     "@storybook/addons": "^7.5.3",
     "@storybook/react": "^7.5.3",
-    "storybook": "^7.5.3"
-  },
-  "devDependencies": {
     "@storybook/react-vite": "^7.5.3",
+    "storybook": "^7.5.3",
     "vite": "^5.0.0"
   },
   "peerDependencies": {

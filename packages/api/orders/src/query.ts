@@ -3,7 +3,7 @@ import { Order } from '@rooser/domain-orders';
 // NOTE: api interfaces, fetchers and mutators can be generated from published OpenAPI schemas
 // we should only have to maintain our interfaces and data mappers
 
-const baseUrl = 'http://localhost:3000';
+const baseUrl = process.env.API_HOST || 'http://localhost:3000';
 
 interface ApiOrder {
   id: number;

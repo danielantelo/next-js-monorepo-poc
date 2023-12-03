@@ -61,18 +61,18 @@ All the above checks should run on PR and block merge if any issues.
 
 In a production ready setup we would also add **e2e tests** against a deployed instance to run on master alognside the deployment tasks.
 
-## What is missing that I would have liked to include
-
-- `react-query` or similar, for optimal performance usually recommend using this lib for all data fetching, it can be configured to be used both server and clientside with appropriate caching.
-- Some responsive behaviour to the gallery listing
-- Pagination on the order tables to limit to 10 and ensure a speedy experience
-- Proper cypress tests, I only added the storybook visual regression and started on the webapp visual/functional
-
 ## Dockerized
 
 Build and run with:
 
 ```
 docker build --tag rooserapp .
-docker run -p 3000:3000 rooserapp
+docker run -p 3000:3000 -e API_HOST="host.docker.internal:3000" rooserapp
 ```
+
+## What is missing that I would have liked to include
+
+- `react-query` or similar, for optimal performance usually recommend using this lib for all data fetching, it can be configured to be used both server and clientside with appropriate caching.
+- Some responsive behaviour to the gallery listing
+- Pagination on the order tables to limit to 10 and ensure a speedy experience
+- Proper cypress tests, I only added the storybook visual regression and started on the webapp visual/functional
