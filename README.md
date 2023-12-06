@@ -66,8 +66,8 @@ In a production ready setup we would also add **e2e tests** against a deployed i
 Build and run with:
 
 ```
-docker build --tag rooserapp .
-docker run -p 3000:3000 -e API_HOST="http://host.docker.internal:3000" rooserapp
+docker build --tag pocApp .
+docker run -p 3000:3000 -e API_HOST="http://host.docker.internal:3000" pocApp
 ```
 
 ## What is missing that I would have liked to include

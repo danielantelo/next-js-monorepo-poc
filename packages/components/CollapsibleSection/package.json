@@ -1,12 +1,12 @@
 {
-  "name": "@rooser/component-collapsible-section",
+  "name": "@poc/component-collapsible-section",
   "version": "1.0.0",
   "main": "src/index.ts",
   "dependencies": {
-    "@rooser/ui": "workspace:*"
+    "@poc/ui": "workspace:*"
   },
   "devDependencies": {
-    "@rooser/jest": "workspace:*"
+    "@poc/jest": "workspace:*"
   },
   "peerDependencies": {
     "react": "^18",

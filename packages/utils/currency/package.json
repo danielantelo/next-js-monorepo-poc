@@ -1,11 +1,11 @@
 {
-  "name": "@rooser/util-currency",
+  "name": "@poc/util-currency",
   "version": "1.0.0",
   "main": "src/index.ts",
   "dependencies": {
     "dayjs": "^1.11.10"
   },
   "devDependencies": {
-    "@rooser/jest": "workspace:*"
+    "@poc/jest": "workspace:*"
   }
 }

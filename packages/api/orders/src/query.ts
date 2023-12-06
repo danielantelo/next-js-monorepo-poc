@@ -1,4 +1,4 @@
-import { Order } from '@rooser/domain-orders';
+import { Order } from '@poc/domain-orders';
 
 // NOTE: api interfaces, fetchers and mutators can be generated from published OpenAPI schemas
 // we should only have to maintain our interfaces and data mappers

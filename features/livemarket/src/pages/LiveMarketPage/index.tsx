@@ -1,4 +1,4 @@
-import { getOrders } from '@rooser/api-orders';
+import { getOrders } from '@poc/api-orders';
 import { LiveMarketPage } from './LiveMarketPage';
 
 export async function LiveMarketPageContainer() {

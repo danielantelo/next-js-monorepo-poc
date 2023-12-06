@@ -1,16 +1,16 @@
 {
-  "name": "@rooser/component-orders-table",
+  "name": "@poc/component-orders-table",
   "version": "1.0.0",
   "main": "src/index.ts",
   "dependencies": {
-    "@rooser/domain-orders": "workspace:*",
-    "@rooser/ui": "workspace:*",
-    "@rooser/util-currency": "workspace:*",
-    "@rooser/util-dates": "workspace:*",
+    "@poc/domain-orders": "workspace:*",
+    "@poc/ui": "workspace:*",
+    "@poc/util-currency": "workspace:*",
+    "@poc/util-dates": "workspace:*",
     "classnames": "^2.3.2"
   },
   "devDependencies": {
-    "@rooser/jest": "workspace:*"
+    "@poc/jest": "workspace:*"
   },
   "peerDependencies": {
     "react": "^18",

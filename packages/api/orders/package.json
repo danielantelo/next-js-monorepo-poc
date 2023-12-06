@@ -1,11 +1,11 @@
 {
-  "name": "@rooser/api-orders",
+  "name": "@poc/api-orders",
   "version": "1.0.0",
   "main": "src/index.ts",
   "dependencies": {
-    "@rooser/domain-orders": "workspace:*"
+    "@poc/domain-orders": "workspace:*"
   },
   "devDependencies": {
-    "@rooser/jest": "workspace:*"
+    "@poc/jest": "workspace:*"
   }
 }

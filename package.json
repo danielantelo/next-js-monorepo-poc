@@ -1,5 +1,5 @@
 {
-  "name": "@rooser/root",
+  "name": "@poc/root",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -12,19 +12,19 @@
     "packages/utils/*"
   ],
   "scripts": {
-    "build": "yarn workspace @rooser/webapp build",
-    "dev": "yarn workspace @rooser/webapp dev",
+    "build": "yarn workspace @poc/webapp build",
+    "dev": "yarn workspace @poc/webapp dev",
     "lint": "eslint .",
-    "start": "yarn workspace @rooser/webapp start",
-    "storybook": "yarn workspace @rooser/storybook start",
+    "start": "yarn workspace @poc/webapp start",
+    "storybook": "yarn workspace @poc/storybook start",
     "test": "jest",
     "typecheck": "tsc --noEmit -p tsconfig.json",
-    "cy": "yarn workspace @rooser/cypress cy",
-    "cy:storybook": "yarn workspace @rooser/cypress cy:storybook"
+    "cy": "yarn workspace @poc/cypress cy",
+    "cy:storybook": "yarn workspace @poc/cypress cy:storybook"
   },
   "devDependencies": {
-    "@rooser/eslint": "workspace:*",
-    "@rooser/jest": "workspace:*",
+    "@poc/eslint": "workspace:*",
+    "@poc/jest": "workspace:*",
     "@types/node": "^20.9.1",
     "eslint": "^8.53.0",
     "jest": "^29.7.0",

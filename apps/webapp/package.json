@@ -1,5 +1,5 @@
 {
-  "name": "@rooser/webapp",
+  "name": "@poc/webapp",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,8 +9,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "@rooser/feature-live-market": "workspace:*",
-    "@rooser/ui": "workspace:*",
+    "@poc/feature-live-market": "workspace:*",
+    "@poc/ui": "workspace:*",
     "next": "^14",
     "react": "^18",
     "react-dom": "^18"

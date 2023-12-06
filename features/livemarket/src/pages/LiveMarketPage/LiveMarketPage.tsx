@@ -1,8 +1,8 @@
 'use client';
 
-import { CollapsibleSection } from '@rooser/component-collapsible-section';
-import { OrdersTable } from '@rooser/component-orders-table';
-import { Order } from '@rooser/domain-orders';
+import { CollapsibleSection } from '@poc/component-collapsible-section';
+import { OrdersTable } from '@poc/component-orders-table';
+import { Order } from '@poc/domain-orders';
 import { LiveActions } from '../../components/LiveActions';
 import { useOrders } from '../../useOrders';
 

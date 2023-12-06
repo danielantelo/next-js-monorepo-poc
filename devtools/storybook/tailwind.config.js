@@ -1,2 +1,2 @@
 /** @type {import('tailwindcss').Config} */
-export { tailwindConfig as default } from '@rooser/ui';
+export { tailwindConfig as default } from '@poc/ui';

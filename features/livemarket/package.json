@@ -1,15 +1,15 @@
 {
-  "name": "@rooser/feature-live-market",
+  "name": "@poc/feature-live-market",
   "version": "1.0.0",
   "main": "src/index.tsx",
   "dependencies": {
-    "@rooser/api-orders": "workspace:*",
-    "@rooser/component-collapsible-section": "workspace:*",
-    "@rooser/component-orders-table": "workspace:*",
-    "@rooser/ui": "workspace:*"
+    "@poc/api-orders": "workspace:*",
+    "@poc/component-collapsible-section": "workspace:*",
+    "@poc/component-orders-table": "workspace:*",
+    "@poc/ui": "workspace:*"
   },
   "devDependencies": {
-    "@rooser/jest": "workspace:*"
+    "@poc/jest": "workspace:*"
   },
   "peerDependencies": {
     "next": "^14",

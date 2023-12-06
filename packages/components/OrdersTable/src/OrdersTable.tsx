@@ -1,7 +1,7 @@
 import classNames from 'classnames';
-import { Order } from '@rooser/domain-orders';
-import { formatDate } from '@rooser/util-dates';
-import { formatAmount } from '@rooser/util-currency';
+import { Order } from '@poc/domain-orders';
+import { formatDate } from '@poc/util-dates';
+import { formatAmount } from '@poc/util-currency';
 import styles from './OrdersTable.module.css';
 import { QualityBadge } from './QualityBadge';
 import { StatusBadge } from './StatusBadge';

@@ -2459,6 +2459,192 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@poc/api-orders@workspace:*, @poc/api-orders@workspace:packages/api/orders":
+  version: 0.0.0-use.local
+  resolution: "@poc/api-orders@workspace:packages/api/orders"
+  dependencies:
+    "@poc/domain-orders": "workspace:*"
+    "@poc/jest": "workspace:*"
+  languageName: unknown
+  linkType: soft
+
+"@poc/component-collapsible-section@workspace:*, @poc/component-collapsible-section@workspace:packages/components/CollapsibleSection":
+  version: 0.0.0-use.local
+  resolution: "@poc/component-collapsible-section@workspace:packages/components/CollapsibleSection"
+  dependencies:
+    "@poc/jest": "workspace:*"
+    "@poc/ui": "workspace:*"
+  peerDependencies:
+    react: ^18
+    react-dom: ^18
+  languageName: unknown
+  linkType: soft
+
+"@poc/component-orders-table@workspace:*, @poc/component-orders-table@workspace:packages/components/OrdersTable":
+  version: 0.0.0-use.local
+  resolution: "@poc/component-orders-table@workspace:packages/components/OrdersTable"
+  dependencies:
+    "@poc/domain-orders": "workspace:*"
+    "@poc/jest": "workspace:*"
+    "@poc/ui": "workspace:*"
+    "@poc/util-currency": "workspace:*"
+    "@poc/util-dates": "workspace:*"
+    classnames: ^2.3.2
+  peerDependencies:
+    react: ^18
+    react-dom: ^18
+  languageName: unknown
+  linkType: soft
+
+"@poc/cypress@workspace:devtools/cypress":
+  version: 0.0.0-use.local
+  resolution: "@poc/cypress@workspace:devtools/cypress"
+  dependencies:
+    cypress: ^13
+    cypress-image-snapshot: ^4.0.1
+    cypress-storybook-commands: ^0.3.6
+  languageName: unknown
+  linkType: soft
+
+"@poc/domain-orders@workspace:*, @poc/domain-orders@workspace:packages/domain/orders":
+  version: 0.0.0-use.local
+  resolution: "@poc/domain-orders@workspace:packages/domain/orders"
+  languageName: unknown
+  linkType: soft
+
+"@poc/eslint@workspace:*, @poc/eslint@workspace:devtools/eslint":
+  version: 0.0.0-use.local
+  resolution: "@poc/eslint@workspace:devtools/eslint"
+  dependencies:
+    "@typescript-eslint/eslint-plugin": ^6.11.0
+    "@typescript-eslint/parser": ^6.11.0
+    eslint-config-prettier: ^9.0.0
+    eslint-plugin-eslint-comments: ^3.2.0
+    eslint-plugin-import: ^2.28.1
+    eslint-plugin-jest: ^27.4.2
+    eslint-plugin-jsx-a11y: ^6.7.1
+    eslint-plugin-prettier: ^4.2.1
+    eslint-plugin-react: ^7.33.2
+    eslint-plugin-react-hooks: ^4.6.0
+    eslint-plugin-simple-import-sort: ^10.0.0
+    eslint-plugin-testing-library: ^6.1.0
+    prettier: ^2.8.8
+  peerDependencies:
+    eslint: ^8
+  languageName: unknown
+  linkType: soft
+
+"@poc/feature-live-market@workspace:*, @poc/feature-live-market@workspace:features/livemarket":
+  version: 0.0.0-use.local
+  resolution: "@poc/feature-live-market@workspace:features/livemarket"
+  dependencies:
+    "@poc/api-orders": "workspace:*"
+    "@poc/component-collapsible-section": "workspace:*"
+    "@poc/component-orders-table": "workspace:*"
+    "@poc/jest": "workspace:*"
+    "@poc/ui": "workspace:*"
+  peerDependencies:
+    next: ^14
+    react: ^18
+    react-dom: ^18
+  languageName: unknown
+  linkType: soft
+
+"@poc/jest@workspace:*, @poc/jest@workspace:devtools/jest":
+  version: 0.0.0-use.local
+  resolution: "@poc/jest@workspace:devtools/jest"
+  dependencies:
+    "@testing-library/jest-dom": ^6.1.4
+    "@testing-library/react": ^14.1.0
+    "@testing-library/user-event": ^14.5.1
+    "@types/jest": ^29.5.8
+    identity-obj-proxy: ^3.0.0
+    jest: ^29.7.0
+    jest-environment-jsdom: ^29.7.0
+    ts-jest: ^29.1.1
+  peerDependencies:
+    react: ^18
+    react-dom: ^18
+  languageName: unknown
+  linkType: soft
+
+"@poc/root@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@poc/root@workspace:."
+  dependencies:
+    "@poc/eslint": "workspace:*"
+    "@poc/jest": "workspace:*"
+    "@types/node": ^20.9.1
+    eslint: ^8.53.0
+    jest: ^29.7.0
+    typescript: ^5
+  languageName: unknown
+  linkType: soft
+
+"@poc/storybook@workspace:devtools/storybook":
+  version: 0.0.0-use.local
+  resolution: "@poc/storybook@workspace:devtools/storybook"
+  dependencies:
+    "@poc/component-collapsible-section": "workspace:*"
+    "@poc/component-orders-table": "workspace:*"
+    "@poc/feature-live-market": "workspace:*"
+    "@poc/ui": "workspace:*"
+    "@storybook/addon-essentials": ^7.5.3
+    "@storybook/addon-links": ^7.5.3
+    "@storybook/addons": ^7.5.3
+    "@storybook/react": ^7.5.3
+    "@storybook/react-vite": ^7.5.3
+    storybook: ^7.5.3
+    vite: ^5.0.0
+  peerDependencies:
+    react: ^18
+    react-dom: ^18
+  languageName: unknown
+  linkType: soft
+
+"@poc/ui@workspace:*, @poc/ui@workspace:packages/ui":
+  version: 0.0.0-use.local
+  resolution: "@poc/ui@workspace:packages/ui"
+  dependencies:
+    autoprefixer: ^10.0.1
+    postcss: ^8
+    tailwindcss: ^3.3.0
+  languageName: unknown
+  linkType: soft
+
+"@poc/util-currency@workspace:*, @poc/util-currency@workspace:packages/utils/currency":
+  version: 0.0.0-use.local
+  resolution: "@poc/util-currency@workspace:packages/utils/currency"
+  dependencies:
+    "@poc/jest": "workspace:*"
+    dayjs: ^1.11.10
+  languageName: unknown
+  linkType: soft
+
+"@poc/util-dates@workspace:*, @poc/util-dates@workspace:packages/utils/dates":
+  version: 0.0.0-use.local
+  resolution: "@poc/util-dates@workspace:packages/utils/dates"
+  dependencies:
+    "@poc/jest": "workspace:*"
+    dayjs: ^1.11.10
+  languageName: unknown
+  linkType: soft
+
+"@poc/webapp@workspace:apps/webapp":
+  version: 0.0.0-use.local
+  resolution: "@poc/webapp@workspace:apps/webapp"
+  dependencies:
+    "@poc/feature-live-market": "workspace:*"
+    "@poc/ui": "workspace:*"
+    "@types/node": ^20
+    "@types/react": ^18
+    "@types/react-dom": ^18
+    next: ^14
+    react: ^18
+    react-dom: ^18
+  languageName: unknown
+  linkType: soft
+
 "@radix-ui/number@npm:1.0.1":
   version: 1.0.1
   resolution: "@radix-ui/number@npm:1.0.1"
@@ -3126,192 +3312,6 @@ __metadata:
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
-
-"@rooser/api-orders@workspace:*, @rooser/api-orders@workspace:packages/api/orders":
-  version: 0.0.0-use.local
-  resolution: "@rooser/api-orders@workspace:packages/api/orders"
-  dependencies:
-    "@rooser/domain-orders": "workspace:*"
-    "@rooser/jest": "workspace:*"
-  languageName: unknown
-  linkType: soft
-
-"@rooser/component-collapsible-section@workspace:*, @rooser/component-collapsible-section@workspace:packages/components/CollapsibleSection":
-  version: 0.0.0-use.local
-  resolution: "@rooser/component-collapsible-section@workspace:packages/components/CollapsibleSection"
-  dependencies:
-    "@rooser/jest": "workspace:*"
-    "@rooser/ui": "workspace:*"
-  peerDependencies:
-    react: ^18
-    react-dom: ^18
-  languageName: unknown
-  linkType: soft
-
-"@rooser/component-orders-table@workspace:*, @rooser/component-orders-table@workspace:packages/components/OrdersTable":
-  version: 0.0.0-use.local
-  resolution: "@rooser/component-orders-table@workspace:packages/components/OrdersTable"
-  dependencies:
-    "@rooser/domain-orders": "workspace:*"
-    "@rooser/jest": "workspace:*"
-    "@rooser/ui": "workspace:*"
-    "@rooser/util-currency": "workspace:*"
-    "@rooser/util-dates": "workspace:*"
-    classnames: ^2.3.2
-  peerDependencies:
-    react: ^18
-    react-dom: ^18
-  languageName: unknown
-  linkType: soft
-
-"@rooser/cypress@workspace:devtools/cypress":
-  version: 0.0.0-use.local
-  resolution: "@rooser/cypress@workspace:devtools/cypress"
-  dependencies:
-    cypress: ^13
-    cypress-image-snapshot: ^4.0.1
-    cypress-storybook-commands: ^0.3.6
-  languageName: unknown
-  linkType: soft
-
-"@rooser/domain-orders@workspace:*, @rooser/domain-orders@workspace:packages/domain/orders":
-  version: 0.0.0-use.local
-  resolution: "@rooser/domain-orders@workspace:packages/domain/orders"
-  languageName: unknown
-  linkType: soft
-
-"@rooser/eslint@workspace:*, @rooser/eslint@workspace:devtools/eslint":
-  version: 0.0.0-use.local
-  resolution: "@rooser/eslint@workspace:devtools/eslint"
-  dependencies:
-    "@typescript-eslint/eslint-plugin": ^6.11.0
-    "@typescript-eslint/parser": ^6.11.0
-    eslint-config-prettier: ^9.0.0
-    eslint-plugin-eslint-comments: ^3.2.0
-    eslint-plugin-import: ^2.28.1
-    eslint-plugin-jest: ^27.4.2
-    eslint-plugin-jsx-a11y: ^6.7.1
-    eslint-plugin-prettier: ^4.2.1
-    eslint-plugin-react: ^7.33.2
-    eslint-plugin-react-hooks: ^4.6.0
-    eslint-plugin-simple-import-sort: ^10.0.0
-    eslint-plugin-testing-library: ^6.1.0
-    prettier: ^2.8.8
-  peerDependencies:
-    eslint: ^8
-  languageName: unknown
-  linkType: soft
-
-"@rooser/feature-live-market@workspace:*, @rooser/feature-live-market@workspace:features/livemarket":
-  version: 0.0.0-use.local
-  resolution: "@rooser/feature-live-market@workspace:features/livemarket"
-  dependencies:
-    "@rooser/api-orders": "workspace:*"
-    "@rooser/component-collapsible-section": "workspace:*"
-    "@rooser/component-orders-table": "workspace:*"
-    "@rooser/jest": "workspace:*"
-    "@rooser/ui": "workspace:*"
-  peerDependencies:
-    next: ^14
-    react: ^18
-    react-dom: ^18
-  languageName: unknown
-  linkType: soft
-
-"@rooser/jest@workspace:*, @rooser/jest@workspace:devtools/jest":
-  version: 0.0.0-use.local
-  resolution: "@rooser/jest@workspace:devtools/jest"
-  dependencies:
-    "@testing-library/jest-dom": ^6.1.4
-    "@testing-library/react": ^14.1.0
-    "@testing-library/user-event": ^14.5.1
-    "@types/jest": ^29.5.8
-    identity-obj-proxy: ^3.0.0
-    jest: ^29.7.0
-    jest-environment-jsdom: ^29.7.0
-    ts-jest: ^29.1.1
-  peerDependencies:
-    react: ^18
-    react-dom: ^18
-  languageName: unknown
-  linkType: soft
-
-"@rooser/root@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@rooser/root@workspace:."
-  dependencies:
-    "@rooser/eslint": "workspace:*"
-    "@rooser/jest": "workspace:*"
-    "@types/node": ^20.9.1
-    eslint: ^8.53.0
-    jest: ^29.7.0
-    typescript: ^5
-  languageName: unknown
-  linkType: soft
-
-"@rooser/storybook@workspace:devtools/storybook":
-  version: 0.0.0-use.local
-  resolution: "@rooser/storybook@workspace:devtools/storybook"
-  dependencies:
-    "@rooser/component-collapsible-section": "workspace:*"
-    "@rooser/component-orders-table": "workspace:*"
-    "@rooser/feature-live-market": "workspace:*"
-    "@rooser/ui": "workspace:*"
-    "@storybook/addon-essentials": ^7.5.3
-    "@storybook/addon-links": ^7.5.3
-    "@storybook/addons": ^7.5.3
-    "@storybook/react": ^7.5.3
-    "@storybook/react-vite": ^7.5.3
-    storybook: ^7.5.3
-    vite: ^5.0.0
-  peerDependencies:
-    react: ^18
-    react-dom: ^18
-  languageName: unknown
-  linkType: soft
-
-"@rooser/ui@workspace:*, @rooser/ui@workspace:packages/ui":
-  version: 0.0.0-use.local
-  resolution: "@rooser/ui@workspace:packages/ui"
-  dependencies:
-    autoprefixer: ^10.0.1
-    postcss: ^8
-    tailwindcss: ^3.3.0
-  languageName: unknown
-  linkType: soft
-
-"@rooser/util-currency@workspace:*, @rooser/util-currency@workspace:packages/utils/currency":
-  version: 0.0.0-use.local
-  resolution: "@rooser/util-currency@workspace:packages/utils/currency"
-  dependencies:
-    "@rooser/jest": "workspace:*"
-    dayjs: ^1.11.10
-  languageName: unknown
-  linkType: soft
-
-"@rooser/util-dates@workspace:*, @rooser/util-dates@workspace:packages/utils/dates":
-  version: 0.0.0-use.local
-  resolution: "@rooser/util-dates@workspace:packages/utils/dates"
-  dependencies:
-    "@rooser/jest": "workspace:*"
-    dayjs: ^1.11.10
-  languageName: unknown
-  linkType: soft
-
-"@rooser/webapp@workspace:apps/webapp":
-  version: 0.0.0-use.local
-  resolution: "@rooser/webapp@workspace:apps/webapp"
-  dependencies:
-    "@rooser/feature-live-market": "workspace:*"
-    "@rooser/ui": "workspace:*"
-    "@types/node": ^20
-    "@types/react": ^18
-    "@types/react-dom": ^18
-    next: ^14
-    react: ^18
-    react-dom: ^18
-  languageName: unknown
-  linkType: soft
 
 "@sinclair/typebox@npm:^0.27.8":
   version: 0.27.8

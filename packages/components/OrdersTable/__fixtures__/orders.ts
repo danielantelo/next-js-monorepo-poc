@@ -1,4 +1,4 @@
-import { Order } from '@rooser/domain-orders';
+import { Order } from '@poc/domain-orders';
 
 export const mockedOrders: Order[] = [
   {

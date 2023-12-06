@@ -1,5 +1,5 @@
 {
-  "name": "@rooser/storybook",
+  "name": "@poc/storybook",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -7,10 +7,10 @@
     "start": "storybook dev -c src -p 9002 --ci"
   },
   "devDependencies": {
-    "@rooser/component-collapsible-section": "workspace:*",
-    "@rooser/component-orders-table": "workspace:*",
-    "@rooser/feature-live-market": "workspace:*",
-    "@rooser/ui": "workspace:*",
+    "@poc/component-collapsible-section": "workspace:*",
+    "@poc/component-orders-table": "workspace:*",
+    "@poc/feature-live-market": "workspace:*",
+    "@poc/ui": "workspace:*",
     "@storybook/addon-essentials": "^7.5.3",
     "@storybook/addon-links": "^7.5.3",
     "@storybook/addons": "^7.5.3",

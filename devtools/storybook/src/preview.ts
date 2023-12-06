@@ -1,5 +1,5 @@
 import type { Preview } from '@storybook/react';
-import '@rooser/ui/globals.css';
+import '@poc/ui/globals.css';
 
 const preview: Preview = {
   parameters: {

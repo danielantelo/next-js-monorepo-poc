@@ -1,5 +1,5 @@
 {
-  "name": "@rooser/cypress",
+  "name": "@poc/cypress",
   "version": "0.1.0",
   "scripts": {
     "cy": "cypress run --e2e --browser chrome --headless --config baseUrl=http://localhost:3000/,specPattern='cypress/integration/webapp/*'",

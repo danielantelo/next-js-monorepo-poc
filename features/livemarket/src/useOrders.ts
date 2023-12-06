@@ -1,4 +1,4 @@
-import { Order } from '@rooser/domain-orders';
+import { Order } from '@poc/domain-orders';
 import { useState } from 'react';
 
 export function useOrders(intitialAcceptedOrders: Order[] = [], initialLiveOrders: Order[] = []) {

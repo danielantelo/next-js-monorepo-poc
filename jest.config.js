@@ -1,4 +1,4 @@
 module.exports = {
-  preset: '@rooser/jest',
+  preset: '@poc/jest',
   roots: ['./apps', './packages']
 };
