@@ -1,4 +1,4 @@
-# Roser coding challenge
+# Multi-Team NextJS Monorepo POC
 
 ## Structure
 
